@@ -20,6 +20,10 @@ Any changes you make to the static HTML generator will require a server bounce.
 
 ## Deployment.
 
-Use forever. Tell it to `npm run prod`. Tell it about the email address associated with the domain.
+Use forever. Tell it to `npm run prod`. Tell it about the email address and associated domain.
+
+```
+$ EMAIL=kermit@muppet.com DOMAIN=ikiss.pig npm run prod
+```
 
 Thanks for your interest.
