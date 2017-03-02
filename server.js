@@ -97,9 +97,10 @@ app.get('/', function (req, res) {
   const brand = req.query.brand || true
 
   const page = React.createElement(Page, {
-    cols: cols,
-    rows: rows,
-    brand: brand
+    cols,
+    rows,
+    brand,
   })
   res.status(200).send(ReactDOM.renderToStaticMarkup(page))
 })
+
